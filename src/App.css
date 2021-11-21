@@ -1,0 +1,43 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: rgb(14, 13, 13);
+  padding: 30px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.post {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 100ms ease-in-out;
+}
+
+.post:hover {
+  transform: scale(1.05);
+}
+
+.post img {
+  max-width: 30%;
+  border-radius: 50%;
+  border-width: 10px;
+}
+
+.post-content{
+  padding: 30px;
+}
+
+.post-content div {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.post-content p {
+  margin-top: 30px;
+}
